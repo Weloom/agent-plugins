@@ -1,0 +1,18 @@
+{
+  "name": "weloom-agent-plugins",
+  "owner": {
+    "name": "Weloom"
+  },
+  "metadata": {
+    "description": "Opinionated engineering skills for AI coding agents.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ss-md-dotnet-engineering",
+      "description": "Skills collection. Highly opinionated support in the areas of .NET solution standards, syntax, refactoring, domain-driven design, clean code, declarative coding & performance optimization. based on core literature incl. Domain-driven design (Eric Evans), Clean Code (Robert C. Martin), Refactoring (Martin Fowler et.al.), Functional Programming in C# (Oliver Sturm) and High Performance .NET (Armen Melkumyen). Support for functional (declerative) programming focuses on harnessing existing .NET's features without introducing 3rd party functional programming libraries, to create more expressive code.",
+      "version": "0.1.0",
+      "source": "./plugins/ss-md-dotnet-engineering"
+    }
+  ]
+}

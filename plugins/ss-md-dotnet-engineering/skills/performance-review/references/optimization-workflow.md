@@ -1,0 +1,9 @@
+## Optimization workflow
+
+1. **Understand the workload and requirement.** Establish the operating conditions, metric, threshold, and relevant failure conditions using the workload guidance. Include other operations competing for the same resources.
+2. **Classify and diagnose the problem.** Distinguish an obvious inefficiency, a likely bottleneck, a correctness defect, a capacity requirement, and a speculative optimization. Trace the relevant CPU, I/O, allocation, retention, contention, or saturation mechanism before choosing a technique.
+3. **Choose relevant alternatives.** Consider the implementation options that fit the problem and their trade-offs. Do not turn this into an exhaustive survey of unrelated APIs.
+4. **Measure when needed.** Use BenchmarkDotNet for isolated code and runtime diagnostics or end-to-end measurements when I/O, serialization, databases, or external services are involved. Straightforward, low-risk improvements do not need a dedicated benchmark.
+5. **Make a coherent, focused change.** Address the diagnosed mechanism or capacity need, not just the easiest local symptom. Preserve behavior unless the requirement authorizes a change or an optimization trade-off is explicitly approved. Ask before materially expanding scope.
+6. **Verify the actual requirement.** Run relevant correctness tests and workload, resource, or failure checks. Repeat measurements under comparable runtime, configuration, hardware, and workload. Check collateral effects such as memory, tail latency, errors, throughput, and downstream saturation; a faster local benchmark is not sufficient.
+7. **Stop at a worthwhile result.** Stop tuning when the required constraints are met. Remove speculative complexity without meaningful benefit. Report unmet thresholds or unavailable evidence explicitly; do not claim success merely because the implementation looks faster.

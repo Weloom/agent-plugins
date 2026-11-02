@@ -1,0 +1,12 @@
+## Represent behavior with functions and delegates
+
+**Use when:** callers need to supply a calculation, predicate, or action as a variation of an operation.
+**Gain:** a focused function exposes the variable behavior without forcing callers through mode flags or single-operation classes. For selection among a fixed set of cases, consider pattern matching instead; not every switch needs a delegate.
+
+- **Choose the signature by responsibility.** Use `Func<T, TResult>` for a supplied result-producing operation, `Func<T, bool>` or the project's existing `Predicate<T>` convention for a predicate, and `Action<T>` for a synchronous action without a result. A `Func` may also have effects; express any such effects in its contract. Parameter names should identify the role, not just say `func` or `callback`.
+- **Keep named behavior readable.** Prefer a method group for an existing meaningful operation, a short lambda for simple local adaptation, and a named local function or method for substantial logic. Expression-bodied syntax is useful only when the expression remains easy to understand.
+- **Make invocation expectations clear.** A higher-order function's contract should make significant repetition, ordering, retention, or conditional invocation of a supplied function predictable. Do not assume a callback is pure, cheap, or safe to invoke twice.
+- **Control capture.** Captured variables are not snapshots; lambdas can observe later reassignment or mutate shared state. Capture intentionally and use a `static` lambda or static local function when no capture is needed. `static` prevents capture but does not prevent calls to effectful static APIs.
+- **Choose a named delegate when it adds meaning.** Use one when domain terminology or signature requirements are not clear from `Func` or `Action`. Do not create synonymous delegate types without a useful distinction.
+- **Retain interfaces for broader contracts.** Prefer an interface when the abstraction needs several related operations, owned state, lifecycle management, or a substantial behavioral contract. Replacing it with several unrelated delegates can lose cohesion.
+- **Use asynchronous delegates safely.** Use `Func<T, Task>` or `Func<T, Task<TResult>>` for awaited work, following the project's conventions. Avoid async lambdas converted to `Action` because they become `async void`; reserve that form for APIs such as event handlers that require it.
