@@ -1,5 +1,5 @@
 ---
-name: domain-guided-development
+name: ss-md-domain-guided-development
 description: "Choose and implement domain-grounded solutions when adding features to an existing business domain or changing business rules, concepts, invariants, ownership, or interactions between models. Also use for explicit DDD design or domain-readability reviews. Do not activate for formatting, purely technical changes, or straightforward CRUD without meaningful domain decisions."
 user-invocable: true
 disable-model-invocation: false
@@ -7,7 +7,7 @@ disable-model-invocation: false
 
 # Domain-guided development
 
-Use domain understanding to find a suitable solution for the requirements and constraints, not the most DDD-looking design. `/domain-guided-development` requests deliberate exploration; automatic activation uses the same reasoning at a depth proportional to the task.
+Use domain understanding to find a suitable solution for the requirements and constraints, not the most DDD-looking design. `/ss-md-domain-guided-development` requests deliberate exploration; automatic activation uses the same reasoning at a depth proportional to the task.
 
 ## Start with the existing diagnostic loop
 
@@ -38,7 +38,7 @@ These are separate, bundled files, not heading links into the full source docume
 
 - DDD reasoning establishes domain meaning, ownership, and solution direction. It does not require a particular programming paradigm or layered architecture.
 - Consult architecture guidance only when implementation changes technical structure or dependencies; consult refactoring guidance only for behavior-preserving transformations. Do not load other skills just because DDD is active.
-- If an understood business decision is obscured by I/O, hidden inputs, mutable intermediates, or effect sequencing, consult `functional-csharp` for that specific technique or boundary; preserve consistency requirements. Use `clean-code-guidance` only when a separate intent/readability decision remains unresolved. Neither is required to approve every domain change.
+- If an understood business decision is obscured by I/O, hidden inputs, mutable intermediates, or effect sequencing, consult `ss-md-functional-csharp` for that specific technique or boundary; preserve consistency requirements. Use `ss-md-clean-code-guidance` only when a separate intent/readability decision remains unresolved. Neither is required to approve every domain change.
 - Handoffs carry a concrete finding and unresolved decision, not a request to load every peer or launch another agent. Reuse loaded guidance; do not return to a source skill for the same decision. If a peer is unavailable, identify a material limitation rather than invent its guidance.
 - Use authoritative project material and existing domain vocabulary. Distinguish evidence from hypotheses. Ask about unresolved business rules or ownership that materially affect the solution; do not ask for approval of every routine coding step.
 - Compare meaningful alternatives when the diagnosis warrants it, not every possible pattern. Do not invent rules, abstractions, services, aggregates, or boundaries to justify a design.

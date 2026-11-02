@@ -1,5 +1,5 @@
 ---
-name: dotnet-architecture
+name: ss-md-dotnet-architecture
 description: "Guide .NET architectural changes, especially when adding or moving classes, types, projects, modules, dependencies, services, or persistence boundaries. Use the relevant architecture guidance before proposing structural changes; do not impose layers on simple CRUD."
 user-invocable: false
 ---
@@ -32,4 +32,4 @@ If architecture ownership or a boundary is ambiguous, ask for clarification or p
 
 The bundled references are maintained with this plugin. Read only relevant files.
 
-If a calculation boundary must remain independent of I/O and hidden state, consult `functional-csharp` for the relevant effect and input contracts. Use `clean-code-guidance` only for an unresolved clarity decision. These are conditional handoffs with a specific finding, not instructions to load every peer or launch another agent. Reuse already-loaded guidance and do not bounce back to the source skill for the same decision. If a peer is unavailable, state a material limitation instead of inventing its instructions.
+If a calculation boundary must remain independent of I/O and hidden state, consult `ss-md-functional-csharp` for the relevant effect and input contracts. Use `ss-md-clean-code-guidance` only for an unresolved clarity decision. These are conditional handoffs with a specific finding, not instructions to load every peer or launch another agent. Reuse already-loaded guidance and do not bounce back to the source skill for the same decision. If a peer is unavailable, state a material limitation instead of inventing its instructions.

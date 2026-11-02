@@ -1,5 +1,5 @@
 ---
-name: clean-comments
+name: ss-md-clean-comments
 description: "Clean up comments in requested code: clarify, correct, or remove redundant, obsolete, inaccurate, or change-history comments. Use only when the user explicitly asks to review or clean comments."
 user-invocable: true
 disable-model-invocation: true

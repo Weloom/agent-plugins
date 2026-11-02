@@ -1,5 +1,5 @@
 ---
-name: functional-csharp
+name: ss-md-functional-csharp
 description: "Apply functional and declarative C# guidance for explicit requests, preservation of established pure calculations, non-mutating inputs, immutable results or separated effects, or diagnosed problems with hidden inputs, mutable intermediate state, composition, or outcome propagation. Can be selected from Clean Code, DDD, refactoring, architecture, or performance findings. A lambda, record, or LINQ expression alone is not a trigger; do not rewrite by default."
 user-invocable: true
 disable-model-invocation: false
@@ -37,8 +37,8 @@ Correctness, business invariants, contracts, ownership, and operational constrai
 
 ## Conditional coordination
 
-- Accept a focused finding from `clean-code-guidance`, `domain-guided-development`, `refactoring-guidance`, `dotnet-architecture`, or `performance-review`. State the property or decision it concerns, then select only applicable references.
-- Use `domain-guided-development` if business meaning or model ownership is uncertain; `refactoring-guidance` if a safe structural migration is needed; `dotnet-architecture` if a responsibility/dependency boundary changes; `performance-review` if copying, allocation, or execution choices threaten an actual workload constraint. Use `clean-code-guidance` only for an unresolved intent/readability decision, not to approve every functional change.
+- Accept a focused finding from `ss-md-clean-code-guidance`, `ss-md-domain-guided-development`, `ss-md-refactoring-guidance`, `ss-md-dotnet-architecture`, or `ss-md-performance-review`. State the property or decision it concerns, then select only applicable references.
+- Use `ss-md-domain-guided-development` if business meaning or model ownership is uncertain; `ss-md-refactoring-guidance` if a safe structural migration is needed; `ss-md-dotnet-architecture` if a responsibility/dependency boundary changes; `ss-md-performance-review` if copying, allocation, or execution choices threaten an actual workload constraint. Use `ss-md-clean-code-guidance` only for an unresolved intent/readability decision, not to approve every functional change.
 - A handoff is a request for specific guidance, not delegation to another agent or permission for broader changes. Reuse skills already loaded; do not bounce back to a source skill for the same decision. If a peer is unavailable, state the limitation when material and use applicable project guidance without inventing its contents.
 - Remain advisory for review or planning requests. Ask before materially expanding scope or changing a contract. Record subsystem-wide preservation constraints in existing scoped instructions or architecture decisions when warranted, not in "functional" labels on individual methods.
 

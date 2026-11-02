@@ -1,5 +1,5 @@
 ---
-name: clean-code-guidance
+name: ss-md-clean-code-guidance
 description: "Assess and improve code clarity during implementation, review, or cleanup when intent, names, responsibilities, effects, dependencies, or failure paths are unclear. Use for explicit Clean Code requests or a concrete readability concern. Supplies quality criteria and routes diagnosed decisions to specialist guidance; not a mandatory gateway or a reason for unrelated cleanup."
 user-invocable: true
 disable-model-invocation: false
@@ -31,11 +31,11 @@ Correctness, business invariants, contracts, ownership, and operational constrai
 
 | Finding and unresolved decision | Relevant skill |
 |---|---|
-| Business terminology, rules, invariants, or ownership are uncertain | `domain-guided-development` for domain meaning |
-| Correcting the problem requires restructuring existing code | `refactoring-guidance` for diagnosis, coherent scope, and safe transformation |
-| Type placement, dependency direction, or composition boundaries must change | `dotnet-architecture` for structural decisions |
-| A concrete workload, allocation, latency, or contention constraint is involved | `performance-review` for evidence and resource trade-offs |
-| Hidden inputs, mutable intermediates, mixed calculations/effects, or established pure/immutable boundaries need attention | `functional-csharp` for relevant techniques or preservation |
+| Business terminology, rules, invariants, or ownership are uncertain | `ss-md-domain-guided-development` for domain meaning |
+| Correcting the problem requires restructuring existing code | `ss-md-refactoring-guidance` for diagnosis, coherent scope, and safe transformation |
+| Type placement, dependency direction, or composition boundaries must change | `ss-md-dotnet-architecture` for structural decisions |
+| A concrete workload, allocation, latency, or contention constraint is involved | `ss-md-performance-review` for evidence and resource trade-offs |
+| Hidden inputs, mutable intermediates, mixed calculations/effects, or established pure/immutable boundaries need attention | `ss-md-functional-csharp` for relevant techniques or preservation |
 
 These are conditional handoffs, not a required pipeline. Identify the specific evidence and decision before loading another skill. Reuse loaded guidance and never return to a source skill for the same decision. Do not invoke other agents merely to follow a handoff. If a peer skill is unavailable, acknowledge a material limitation and follow existing project guidance rather than inventing the missing content.
 

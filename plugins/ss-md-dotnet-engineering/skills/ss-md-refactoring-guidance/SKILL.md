@@ -1,5 +1,5 @@
 ---
-name: refactoring-guidance
+name: ss-md-refactoring-guidance
 description: "Diagnose and improve existing code structure while preserving behavior. Use for refactoring, restructuring, extraction, inlining, simplification, duplication, or code smells, and when a feature or bug fix needs structural improvement to avoid a workaround. Examine the surrounding responsibility rather than assume the smallest diff is best. Do not activate for every edit or unrelated cleanup."
 user-invocable: false
 disable-model-invocation: false
@@ -45,7 +45,7 @@ If work remains necessary and authorized, continue rather than stop at the first
 - Preserve behavior during structural transformations. Separate requested feature or defect corrections from refactoring and give changed behavior explicit tests.
 - If a local patch would worsen design, explain why and propose a coherent alternative. Ask before materially expanding authorized scope or changing contracts or behavior; do not silently redesign or knowingly ship the harmful patch.
 - Use domain-guided development when uncertainty concerns business meaning or model ownership, and architecture guidance when technical boundaries change. Do not automatically load all other skills.
-- If mutable intermediate state, hidden inputs, or mixed calculations/effects drive the diagnosis, consult `functional-csharp` to consider a suitable technique, not to mandate a rewrite. Also consult it when the affected code relies on established pure, non-mutating, or immutable boundaries. Use `clean-code-guidance` only for an unresolved clarity decision.
+- If mutable intermediate state, hidden inputs, or mixed calculations/effects drive the diagnosis, consult `ss-md-functional-csharp` to consider a suitable technique, not to mandate a rewrite. Also consult it when the affected code relies on established pure, non-mutating, or immutable boundaries. Use `ss-md-clean-code-guidance` only for an unresolved clarity decision.
 - Carry the specific finding into a handoff, reuse loaded skills, and do not bounce back to the source for the same decision or launch another agent merely to load guidance. If a peer is unavailable, state a material limitation instead of inventing its instructions.
 - Respect requests for review or planning without editing. Briefly explain evidence, the diagnosed problem, chosen scope, and expected benefit; report verification and remaining limitations without requiring a new document.
 

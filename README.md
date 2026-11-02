@@ -31,14 +31,14 @@ Do not enable overlapping local and repository-hosted copies simultaneously. Mar
 
 ## Included skills
 
-- `domain-guided-development`
-- `dotnet-architecture`
-- `refactoring-guidance`
-- `performance-review`
-- `functional-csharp`
-- `clean-code-guidance`
-- `clean-comments`
-- `normalize-whitespace`
+- `ss-md-domain-guided-development`
+- `ss-md-dotnet-architecture`
+- `ss-md-refactoring-guidance`
+- `ss-md-performance-review`
+- `ss-md-functional-csharp`
+- `ss-md-clean-code-guidance`
+- `ss-md-clean-comments`
+- `ss-md-normalize-whitespace`
 
 Skill descriptions define their intended activation. Comment cleanup and whitespace normalization require explicit invocation. Clients may namespace skill names by plugin.
 

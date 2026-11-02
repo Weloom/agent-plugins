@@ -1,5 +1,5 @@
 ---
-name: performance-review
+name: ss-md-performance-review
 description: "Design, diagnose, and improve .NET code for speed, latency, throughput, CPU, memory budgets, or workload capacity. Use for explicit performance thresholds, profiling or optimization requests, resource exhaustion, hangs, contention, concurrency or parallelism risks, and overload-related stability or availability. Not for every async call or collection; general failover and disaster recovery need broader reliability analysis."
 user-invocable: true
 disable-model-invocation: false
@@ -7,7 +7,7 @@ disable-model-invocation: false
 
 # Meet performance and resource constraints
 
-**Meet the required workload and resource constraints with the simplest correct, reliable design, not maximum speed at any cost.** Use for new implementation as well as diagnosis and optimization. `/performance-review` supports deliberate investigation; automatic activation requires a relevant symptom, explicit requirement, or concrete implementation risk.
+**Meet the required workload and resource constraints with the simplest correct, reliable design, not maximum speed at any cost.** Use for new implementation as well as diagnosis and optimization. `/ss-md-performance-review` supports deliberate investigation; automatic activation requires a relevant symptom, explicit requirement, or concrete implementation risk.
 
 ## Establish constraints and diagnose
 
@@ -53,7 +53,7 @@ Check collateral constraints: faster batch processing is not a win if it exhaust
 - Stop tuning when constraints are met; leave code unchanged when no useful improvement is supported. If verification is unavailable, state the gap rather than claim completion.
 - Resource- and execution-related stability belongs here. Failover, disaster recovery, deployment continuity, and broader availability objectives require additional reliability or infrastructure analysis, not a claim that this skill covers them.
 - Consult refactoring or architecture guidance only when the solution genuinely needs structural or boundary changes. Respect review- or planning-only requests; ask before materially expanding authorized scope.
-- If shared mutation causes the diagnosed contention, consult `functional-csharp` to evaluate ownership, pure calculations, or immutable snapshots as alternatives. Also use it to preserve established calculation boundaries in affected code. Include copying, allocation, consistency, and lifetime costs; functional style is not automatically faster. Use `clean-code-guidance` only when a separate clarity decision remains unresolved.
+- If shared mutation causes the diagnosed contention, consult `ss-md-functional-csharp` to evaluate ownership, pure calculations, or immutable snapshots as alternatives. Also use it to preserve established calculation boundaries in affected code. Include copying, allocation, consistency, and lifetime costs; functional style is not automatically faster. Use `ss-md-clean-code-guidance` only when a separate clarity decision remains unresolved.
 - A handoff identifies evidence and an unresolved decision, not a mandatory peer-loading sequence or another agent. Reuse loaded guidance; do not return to the source skill for the same decision. If a peer is unavailable, report a material limitation rather than invent its guidance.
 
 The bundled references are maintained with this plugin. Read only the extracts needed for the current workload.
