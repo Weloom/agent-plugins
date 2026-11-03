@@ -1,6 +1,9 @@
 ## Comments and documentation
 
-Use comments to clarify intent or context that the code cannot express clearly. Prefer improving names, structure, or interfaces over explaining unclear code in comments. Keep comments accurate, concise, and close to the code they explain; update or remove them when the code changes.
+Use comments to clarify intent or context that the code cannot express clearly. Prefer improving class and class member names, structure, or interfaces over explaining unclear code in comments. Keep comments accurate, concise, and close to the code they explain; update or remove them when the code changes.
+
+Don't apply automated comments to the files you change like "This file has been changed by AI ..."
+
 
 ### Good comments
 
@@ -29,7 +32,7 @@ Use comments to clarify intent or context that the code cannot express clearly. 
 
 ## Comments and Documentation
 
-- Keep a concise description of 10 words or fewer on one line, including its documentation-comment syntax. For example:
+- If a description is of 10 words or fewer, keep the comment's surrounding start- and end-tag on the same line. For example:
 
   ```csharp
   /// <summary>Gets the current processing status.</summary>
