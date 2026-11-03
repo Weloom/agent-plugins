@@ -11,6 +11,8 @@ Read [general decision rules](./references/decision-rules.md). Understand the re
 
 Correctness, business invariants, contracts, ownership, and operational constraints take priority over stylistic preferences. Preserve established design properties; assess clarity through names, call sites, explicit inputs/results, and visible effects rather than line counts or one programming paradigm.
 
+Don't apply automated comments to the files you change like "This file has been changed by AI ..."
+
 ## Select only relevant quality guidance
 
 | Concern | Reference |

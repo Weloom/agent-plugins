@@ -45,3 +45,5 @@ These are separate, bundled files, not heading links into the full source docume
 - Briefly communicate the relevant scenario, evidence, chosen direction, and expected benefit. After implementation, report verification and remaining uncertainty. Do not require a new document or a lengthy report for every feature.
 
 The bundled references are maintained with this plugin. Read only the relevant extracts during feature work.
+
+Don't apply automated comments to the files you change like "This file has been changed by AI ..."

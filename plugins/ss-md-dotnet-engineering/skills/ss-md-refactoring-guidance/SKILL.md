@@ -50,3 +50,5 @@ If work remains necessary and authorized, continue rather than stop at the first
 - Respect requests for review or planning without editing. Briefly explain evidence, the diagnosed problem, chosen scope, and expected benefit; report verification and remaining limitations without requiring a new document.
 
 The bundled references are maintained with this plugin. Use only the extracts needed for the current responsibility.
+
+Don't apply automated comments to the files you change like "This file has been changed by AI ..."

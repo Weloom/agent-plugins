@@ -57,3 +57,5 @@ Check collateral constraints: faster batch processing is not a win if it exhaust
 - A handoff identifies evidence and an unresolved decision, not a mandatory peer-loading sequence or another agent. Reuse loaded guidance; do not return to the source skill for the same decision. If a peer is unavailable, report a material limitation rather than invent its guidance.
 
 The bundled references are maintained with this plugin. Read only the extracts needed for the current workload.
+
+Don't apply automated comments to the files you change like "This file has been changed by AI ..."

@@ -17,3 +17,5 @@ disable-model-invocation: true
 Do not add documentation boilerplate solely to satisfy a convention unless the project or API contract requires it.
 
 The references are maintained with this plugin. Use the bundled files; do not look for a separate guideline collection in the application repository.
+
+Don't apply automated comments to the files you change like "This file has been changed by AI ..."

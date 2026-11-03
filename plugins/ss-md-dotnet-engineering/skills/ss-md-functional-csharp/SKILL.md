@@ -43,3 +43,5 @@ Correctness, business invariants, contracts, ownership, and operational constrai
 - Remain advisory for review or planning requests. Ask before materially expanding scope or changing a contract. Record subsystem-wide preservation constraints in existing scoped instructions or architecture decisions when warranted, not in "functional" labels on individual methods.
 
 The bundled references are maintained with this plugin. Read only the required extracts.
+
+Don't apply automated comments to the files you change like "This file has been changed by AI ..."

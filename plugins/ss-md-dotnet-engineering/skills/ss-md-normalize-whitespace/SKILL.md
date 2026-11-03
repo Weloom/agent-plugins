@@ -7,3 +7,5 @@ disable-model-invocation: true
 
 # Normalize whitespace and formatting
 Read [syntax guidance](./references/syntax.md) and apply the guidelines to all comments in the code.
+
+Don't apply automated comments to the files you change like "This file has been changed by AI ..."
