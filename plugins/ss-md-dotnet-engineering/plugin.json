@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ss-md-dotnet-engineering",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Skills collection. Highly opinionated support in the areas of .NET solution standards, syntax, refactoring, domain-driven design, clean code, declarative coding & performance optimization. based on core literature incl. Domain-driven design (Eric Evans), Clean Code (Robert C. Martin), Refactoring (Martin Fowler et.al.), Functional Programming in C# (Oliver Sturm) and High Performance .NET (Armen Melkumyen). Support for functional (declerative) programming focuses on harnessing existing .NET's features without introducing 3rd party functional programming libraries, to create more expressive code.",
   "keywords": ["dotnet", "csharp", "engineering", "skills","functional","declarative","refactoring","performance"]
 }
